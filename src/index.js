@@ -9,6 +9,7 @@ function header(){
     let navMenu = document.createElement('li');
     let navContact = document.createElement('li');
     header.classList.add('header')
+    header.id="header"
     logo.classList.add('logo')
     
     nav.classList.add('nav')
@@ -35,12 +36,20 @@ function pageControl (){
     let currentPage = "Home"
 
 
-    let changePage = (newPageNam) => {
+    let changePage = (newPageName) => {
                             
     }
 }
 
 
 function clearPage () {
-    container 
+    let currentPage = document.querySelector('.content').lastChild 
+    while (currentPage.lastChild){
+        currentPage.removeChild(currentPage.lastChild);
+    }
+    currentPage.remove()
 }
+
+
+console.log(document.querySelector('.content').lastChild.id);
+
