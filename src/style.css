@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+
+
+.header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo{
+    font-size: 2rem;
+    font-family:"Kalam";
+    font-weight: 700;
+}
+
+.nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav > li {
+    list-style: none;
+    font-family: 'Kalam';
+    font-size: 1.5rem;
+}
